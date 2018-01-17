@@ -3,13 +3,16 @@
 <head>
     <link rel="styleSheet" href="app.css"/>
     <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/showdown/compressed/Showdown.js"></script>
+    <script src="../bower_components/angular-markdown-directive/markdown.js"></script>
     <script src="mainapp.js"></script>
     <script src="issues/controller.js"></script>
 </head>
 <body ng-app="mainApp" ng-controller="mainController">
 <div class="main_page">
     <div class="header">
-        <h1>Header</h1>
+        <h1>Levels Beyond Front End Coding Exercise with AngularJS</h1>
     </div>
     <div class="center_pane">
         <div class="sidebar">
@@ -43,13 +46,20 @@
         </div>
         <div class="main_panel">
             <div ng-repeat="record in data | filter: {title: search.title, body: search.body, user: search.user, assignee: search.assignee} as filtered">
-                <h3 class="title">{{record.title}}</h3>
-                <div class="body">{{record.body}}</div>
-                <h6 class="user">User: {{record.user}}</h6><h6 class="assignee">Assignee: {{record.assignee}}</h6>
+                <div class="ticket" ng-class-odd="'odd_ticket'" ng-class-even="'even_ticket'">
+                    <h3 class="title">{{record.title}}</h3>
+                    <div btf-markdown="record.body"></div>
+                    <div class="bottom_of_ticket">
+                        <h6 class="user">User: {{record.user}}</h6><h6 class="assignee">Assignee:
+                        {{record.assignee}}</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footer">Footer</div>
+    <div class="footer">
+        <small>Copyright (C) 2018</small>
+    </div>
 </div>
 </body>
 </html>
