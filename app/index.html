@@ -1,30 +1,55 @@
 <!doctype html>
 <html>
-   <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-      <script src="mainapp.js"></script>
-       <script src="issues/controller.js"></script>
-   </head>
-   
-   <body ng-app="mainApp" ng-controller="mainController">
-      <div id="model">
-          <table>
-              <tr><td>Last ? days</td><td><input type="text" ng-model="search.days"></td></tr>
-              <tr><td>Title</td><td><input type="text" ng-model="search.title"></td></tr>
-              <tr><td>Body</td><td><input type="text" ng-model="search.body"></td></tr>
-              <tr><td>User</td><td><input type="text" ng-model="search.user"></td></tr>
-              <tr><td>Assignee</td><td><input type="text" ng-model="search.assignee"></td></tr>
-          </table>
-      </div>
-      <h2>From the controller:</h2>
-      <p>{{count}} records</p>
-      <div id="view">
-          <table>
-              <tr><th>Title</th><th>Body</th><th>User</th><th>Assignee</th></tr>
-              <tr ng-repeat = "record in data | filter: {title: search.title, body: search.body, user: search.user, assignee: search.assignee}">
-                  <td>{{record.title}}</td><td>{{record.body}}</td><td>{{record.user}}</td><td>{{record.assignee}}</td><td>x{{search.assignee}}y</td>
-              </tr>
-          </table>
-      </div>
-   </body>
+<head>
+    <link rel="styleSheet" href="app.css"/>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="mainapp.js"></script>
+    <script src="issues/controller.js"></script>
+</head>
+<body ng-app="mainApp" ng-controller="mainController">
+<div class="main_page">
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="center_pane">
+        <div class="sidebar">
+            <table>
+                <tr>
+                    <td>Last ? days</td>
+                    <td><input type="text" ng-model="search.days"></td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td><input type="text" ng-model="search.title"></td>
+                </tr>
+                <tr>
+                    <td>Body</td>
+                    <td><input type="text" ng-model="search.body"></td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                    <td><input type="text" ng-model="search.user"></td>
+                </tr>
+                <tr>
+                    <td>Assignee</td>
+                    <td><input type="text" ng-model="search.assignee"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Showing {{filtered.length}} records of {{count}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="main_panel">
+            <div ng-repeat="record in data | filter: {title: search.title, body: search.body, user: search.user, assignee: search.assignee} as filtered">
+                <h3 class="title">{{record.title}}</h3>
+                <div class="body">{{record.body}}</div>
+                <h6 class="user">User: {{record.user}}</h6><h6 class="assignee">Assignee: {{record.assignee}}</h6>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
+</body>
 </html>
