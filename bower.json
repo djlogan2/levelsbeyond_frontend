@@ -1,0 +1,21 @@
+{
+  "name": "levelsbeyond_frontend",
+  "homepage": "https://github.com/djlogan2/levelsbeyond_frontend",
+  "authors": [
+    "David Logan <djlogan2.dl@gmail.com>"
+  ],
+  "description": "YACE using AngularJS",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.8",
+    "angular-markdown-directive": "^0.3.1"
+  }
+}
