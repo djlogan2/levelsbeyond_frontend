@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfa7af6a-01cd-423d-be6a-0dbfc54951d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.css" afterPath="$PROJECT_DIR$/app/app.css" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change beforePath="$PROJECT_DIR$/app/issues/controller.js" afterPath="$PROJECT_DIR$/app/issues/controller.js" />
-      <change beforePath="$PROJECT_DIR$/app/mainapp.js" afterPath="$PROJECT_DIR$/app/mainapp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +29,8 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -110,7 +106,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="459" />
     <option name="y" value="39" />
     <option name="width" value="1527" />
@@ -294,24 +290,6 @@
               <item name="levelsbeyond_frontend" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="levelsbeyond_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelsbeyond_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelsbeyond_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelsbeyond_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
-              <item name="showdown" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelsbeyond_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelsbeyond_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
-              <item name="showdown" type="462c0819:PsiDirectoryNode" />
-              <item name="compressed" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -377,7 +355,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516030154039</updated>
-      <workItem from="1516030155817" duration="36411000" />
+      <workItem from="1516030155817" duration="38280000" />
     </task>
     <task id="LOCAL-00001" summary="Fully functional, now just have to make it look good">
       <created>1516117908152</created>
@@ -393,18 +371,33 @@
       <option name="project" value="LOCAL" />
       <updated>1516171264766</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="99% function and looking good. Good enough to submit.">
+      <created>1516217837440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1516217837442</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I'm not sure why bower.json wasn't added. It's added.">
+      <created>1516312567320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1516312567381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36411000" />
+    <option name="totallyTimeSpent" value="38280000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="39" width="1527" height="974" extended-state="0" />
+    <frame x="459" y="39" width="1527" height="974" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28290766" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -430,7 +423,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fully functional, now just have to make it look good" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully functional, now just have to make it look good" />
+    <MESSAGE value="99% function and looking good. Good enough to submit." />
+    <MESSAGE value="I'm not sure why bower.json wasn't added. It's added." />
+    <option name="LAST_COMMIT_MESSAGE" value="I'm not sure why bower.json wasn't added. It's added." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -573,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
